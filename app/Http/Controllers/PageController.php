@@ -9,7 +9,16 @@ class PageController extends Controller
     public function main(){
         return view('main');
     }
-    public function welcome(){
-        return view('welcome', ['arr' => ['Umrzoq',1,23,4,56,7]]);
+    public function about(){
+        return view('about');
+    }
+    public function service(){
+        return view('service');
+    }
+    public function projects(){
+        return view('projects');
+    }
+    public function contact(){
+        return view('contact');
     }
 }
