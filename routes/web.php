@@ -15,8 +15,9 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', [PageController::class, 'main']);
 
+Route::get('/', [PageController::class, 'main']);
+Route::get('/welcome', [PageController::class, 'welcome']);
 
 
 
