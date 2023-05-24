@@ -18,6 +18,9 @@ class PageController extends Controller
     public function projects(){
         return view('projects');
     }
+    public function show(){
+        return view('posts.show');
+    }
     public function contact(){
         return view('contact');
     }

@@ -23,10 +23,10 @@ Route::get('/projects', [PageController::class, 'projects'])->name('projects');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
 
+Route::get('/show', [PageController::class, 'show'])->name('posts.show');
 Route::resource('posts', PostController::class);
 
 // Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-// Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 // Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
 // Route::post('/posts/create', [PostController::class, 'store'])->name('posts.store');
 // Route::get('/posts/edit/{post}', [PostController::class, 'edit'])->name('posts.edit');
