@@ -23,7 +23,7 @@ Route::get('/projects', [PageController::class, 'projects'])->name('projects');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
 
-Route::get('/show', [PageController::class, 'show'])->name('posts.show');
+
 Route::resource('posts', PostController::class);
 
 // Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
